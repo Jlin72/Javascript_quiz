@@ -9,6 +9,7 @@ var h1 = document.getElementById ("h1");
 var scoreH1 = document.querySelector ("#scoreH1");
 var quizIntroEl = document.querySelector ("#quizIntro");
 var scoreInfo = document.querySelector ("#scoreInfo");
+var answerValue = document.querySelector("#answer");
 var score = 0;
 var timeLeft = 80;
 // function for the timer
@@ -39,14 +40,13 @@ let quizQuestions = [{
 }];
 
 
-// the next function will help with the display of the questions
+// the next function will help with the display of the question aspect of quizQuestions
 function displayQuestion () {
   for (i=0; i<quizQuestions.length; i++){
   var q = quizQuestions[i];
   quizQuestionsEl.innerHTML = q.question;
-  // var choicesSplit = q2.split (" ");
   var button = document.createElement("button");
-  // button.textContent= choicesSplit;
+  button.textContent= q.choices;
   liEl.appendChild(button);
   choices.setAttribute("style", "block;");
   return;
@@ -60,8 +60,15 @@ function quizStart () {
 }
 
 // This next function will be used to check wether the answer selected by the user is correct or wrong
-function answerCheck () {
-  if ()
+function answerCheck (answer) {
+  if (answer=quizQuestions.answer) {
+    answerValue.textContent = "Correct"
+    answerValue.setAttribute ("class", "answerbox")
+
+  }
+  else if (answer != quizQuestions.answer) {
+    var display
+  }
 }
 
 // this next function will help with the start of the quiz when the start button has been pressed
