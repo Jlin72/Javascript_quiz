@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="UTF-8">
+        <title>Quiz game</title> 
+        <link rel ="stylesheet" href="../Homework4/style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    </head>
+    <body>
+        <nav>
+            <p id="highscore" style="float: left;">View Highscores</p>
+            <div id="countdown" style ="text-align: right;">Time Left:0</div>
+        </nav>
+        <main>
+            <div id="quizIntro" class="jumbotron">
+                <h1 id="h1">Javascript quiz</h1>
+                <p>The purpose of this quiz is to test your knowledge regarding javaScript, like its history and uses</p>
+                <div id ="start"><button type="button" class="start-btn btn btn-primary">Click here to start the quiz!</button></div>
+            </div>
+            <div id="quiz" style="display: none;">
+                <h2 id="quizQuestions"></h2>
+                <!-- empty ol tag for the question choices -->
+                <ol id="choices">
+                    <li id="li"></li>
+                </ol>
+                <p id="answerResponse"></p>
+            </div>
+            <div id="scoreInfo" style="display: none;">
+                <h1 id="scoreH1"></h1>
+                <ul id="scoreList"></ul>
+                <p id="answerValue"></p>
+            </div>
+            </main>
+    </body>
+    <script src="./script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</html>
