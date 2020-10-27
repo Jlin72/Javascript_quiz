@@ -20,10 +20,13 @@
             <div id="quiz" style="display: none;">
                 <h2 id="quizQuestions"></h2>
                 <!-- empty ol tag for the question choices -->
-                <ol id="choices">
-                    <li id="li"></li>
+                <ol id="ol">
+                    <li><button id="choiceA" onclick="answerCheck('A')"></button></li>
+                    <li><button id="choiceB" onclick="answerCheck('B')"></button></li>
+                    <li><button id="choiceC" onclick="answerCheck('C')"></button></li>
+                    <li><button id="choiceD" onclick="answerCheck('D')"></button></li>
                 </ol>
-                <p id="answer"></p>
+                <p id="answer" class= "display:none;"></p>
             </div>
             <div id="scoreInfo" style="display: none;">
                 <h1 id="scoreH1"></h1>
